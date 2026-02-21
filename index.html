@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kidung Alexander — Penulis Artikel Bisnis & Korporasi</title>
+  <meta name="description" content="Jasa penulisan artikel profesional untuk bisnis, korporasi, sekolah, dan organisasi. Spesialisasi ekonomi, bisnis, pasar modal, tren masa depan, dan self-development." />
+  <meta name="keywords" content="jasa penulis artikel, content writer bisnis, press release, artikel korporasi, penulis ekonomi, jasa konten bisnis indonesia" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f5f0eb;
+      --maroon: #6b1a1a;
+      --maroon-light: #8b2222;
+      --maroon-glow: rgba(107, 26, 26, 0.25);
+      --gray: #2a2a2a;
+      --gray-text: #888;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── DRAGON SCALE BACKGROUND ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-color: var(--black);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='38' viewBox='0 0 44 38'%3E%3Cpath d='M22 0 L44 19 L22 38 L0 19 Z' fill='none' stroke='%23ffffff' stroke-width='0.5' stroke-opacity='0.11'/%3E%3Cpath d='M22 2 L42 19 L22 36 L2 19 Z' fill='none' stroke='%23ffffff' stroke-width='0.15' stroke-opacity='0.05'/%3E%3Cpath d='M22 6 Q35 13 22 19 Q9 13 22 6Z' fill='none' stroke='%23ffffff' stroke-width='0.3' stroke-opacity='0.07'/%3E%3Ccircle cx='22' cy='19' r='1.2' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+      background-size: 44px 38px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 1;
+    }
+
+    /* Maroon accent glow layer on top of scales */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 20%, rgba(107,26,26,0.14) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 85% 80%, rgba(107,26,26,0.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    section, nav, footer { position: relative; z-index: 1; }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 60px;
+      border-bottom: 1px solid rgba(245,240,235,0.08);
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--maroon-light); }
+
+    .nav-cta {
+      background: var(--maroon);
+      color: var(--white);
+      text-decoration: none;
+      padding: 10px 24px;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid var(--maroon-light);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    .nav-cta:hover {
+      background: var(--maroon-light);
+      box-shadow: 0 0 20px var(--maroon-glow);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -120px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--maroon-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--maroon-light);
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-tag::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--maroon-light);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      font-weight: 900;
+      line-height: 1.08;
+      max-width: 820px;
+      margin-bottom: 32px;
+      letter-spacing: -0.02em;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--maroon-light);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(245,240,235,0.65);
+      max-width: 560px;
+      margin-bottom: 48px;
+      line-height: 1.8;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--maroon);
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px 36px;
+      font-size: 0.88rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid var(--maroon-light);
+      transition: all 0.25s;
+    }
+
+    .btn-primary:hover {
+      background: var(--maroon-light);
+      box-shadow: 0 0 40px var(--maroon-glow);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary svg { transition: transform 0.2s; }
+    .btn-primary:hover svg { transform: translateX(4px); }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 72px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(245,240,235,0.08);
+    }
+
+    .stat-item {}
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--gray-text);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(107,26,26,0.5), transparent);
+      margin: 0 60px;
+    }
+
+    /* ── PROBLEM ── */
+    #problem {
+      padding: 100px 60px;
+    }
+
+    .section-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--maroon-light);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    h2 em { font-style: italic; color: var(--maroon-light); }
+
+    .problem-body {
+      font-size: 1rem;
+      color: rgba(245,240,235,0.65);
+      max-width: 620px;
+      line-height: 1.9;
+    }
+
+    .problem-body strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .problem-list {
+      margin-top: 40px;
+      display: grid;
+      gap: 16px;
+      max-width: 620px;
+    }
+
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 24px;
+      border: 1px solid rgba(245,240,235,0.07);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .problem-icon {
+      color: var(--maroon-light);
+      font-size: 1.1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .problem-item p {
+      font-size: 0.93rem;
+      color: rgba(245,240,235,0.7);
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      padding: 100px 60px;
+      background: rgba(255,255,255,0.015);
+      border-top: 1px solid rgba(245,240,235,0.06);
+      border-bottom: 1px solid rgba(245,240,235,0.06);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1100px;
+    }
+
+    .about-label {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(107,26,26,0.12);
+      letter-spacing: -0.04em;
+      margin-bottom: -20px;
+    }
+
+    .about-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .about-body {
+      font-size: 0.95rem;
+      color: rgba(245,240,235,0.65);
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    .tag {
+      padding: 6px 14px;
+      border: 1px solid rgba(107,26,26,0.5);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--maroon-light);
+    }
+
+    .about-credentials {
+      display: grid;
+      gap: 24px;
+    }
+
+    .credential-card {
+      padding: 28px;
+      border: 1px solid rgba(245,240,235,0.08);
+      border-left: 3px solid var(--maroon);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .credential-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .credential-card p {
+      font-size: 0.85rem;
+      color: var(--gray-text);
+      line-height: 1.6;
+    }
+
+    /* ── SERVICES ── */
+    #services {
+      padding: 100px 60px;
+    }
+
+    .services-header {
+      max-width: 620px;
+      margin-bottom: 60px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+    }
+
+    .service-card {
+      padding: 40px 32px;
+      border: 1px solid rgba(245,240,235,0.07);
+      background: rgba(255,255,255,0.02);
+      transition: background 0.25s, border-color 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 0;
+      background: var(--maroon);
+      transition: height 0.3s;
+    }
+
+    .service-card:hover::before { height: 100%; }
+    .service-card:hover {
+      background: rgba(107,26,26,0.06);
+      border-color: rgba(107,26,26,0.3);
+    }
+
+    .service-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: rgba(107,26,26,0.2);
+      margin-bottom: 16px;
+    }
+
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 0.87rem;
+      color: var(--gray-text);
+      line-height: 1.7;
+    }
+
+    /* ── PRICING ── */
+    #pricing {
+      padding: 100px 60px;
+      background: rgba(255,255,255,0.015);
+      border-top: 1px solid rgba(245,240,235,0.06);
+      border-bottom: 1px solid rgba(245,240,235,0.06);
+    }
+
+    .pricing-header {
+      max-width: 600px;
+      margin-bottom: 60px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      max-width: 1000px;
+    }
+
+    .pricing-card {
+      padding: 44px 36px;
+      border: 1px solid rgba(245,240,235,0.08);
+      background: rgba(255,255,255,0.02);
+      position: relative;
+    }
+
+    .pricing-card.featured {
+      border-color: var(--maroon);
+      background: rgba(107,26,26,0.08);
+    }
+
+    .pricing-card.featured::before {
+      content: 'PALING POPULER';
+      position: absolute;
+      top: -1px; right: 24px;
+      background: var(--maroon);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      padding: 4px 12px;
+      color: var(--white);
+    }
+
+    .pricing-tier {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--maroon-light);
+      margin-bottom: 12px;
+    }
+
+    .pricing-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .pricing-sub {
+      font-size: 0.8rem;
+      color: var(--gray-text);
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 36px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .pricing-features li {
+      font-size: 0.88rem;
+      color: rgba(245,240,235,0.7);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .pricing-features li::before {
+      content: '—';
+      color: var(--maroon-light);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 13px 24px;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid rgba(245,240,235,0.2);
+      color: var(--white);
+      transition: all 0.25s;
+    }
+
+    .btn-outline:hover, .pricing-card.featured .btn-outline {
+      background: var(--maroon);
+      border-color: var(--maroon);
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials {
+      padding: 100px 60px;
+    }
+
+    .testi-header {
+      max-width: 560px;
+      margin-bottom: 60px;
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2px;
+    }
+
+    .testi-card {
+      padding: 36px;
+      border: 1px solid rgba(245,240,235,0.07);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .testi-quote {
+      font-size: 0.95rem;
+      color: rgba(245,240,235,0.75);
+      line-height: 1.85;
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+
+    .testi-quote::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: var(--maroon);
+      line-height: 0;
+      vertical-align: -1rem;
+      margin-right: 4px;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .testi-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: transparent;
+    }
+
+    .testi-name {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    .testi-role {
+      font-size: 0.75rem;
+      color: var(--gray-text);
+      margin-top: 2px;
+    }
+
+    /* ── PORTFOLIO ── */
+    #portfolio {
+      padding: 100px 60px;
+      background: rgba(255,255,255,0.015);
+      border-top: 1px solid rgba(245,240,235,0.06);
+      border-bottom: 1px solid rgba(245,240,235,0.06);
+    }
+
+    .portfolio-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .portfolio-text h2 { margin-bottom: 16px; }
+
+    .portfolio-text p {
+      font-size: 0.95rem;
+      color: rgba(245,240,235,0.6);
+      max-width: 480px;
+      margin-bottom: 36px;
+    }
+
+    /* ── CTA FINAL ── */
+    #cta {
+      padding: 120px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #cta::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(107,26,26,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    #cta h2 { max-width: 700px; margin: 0 auto 20px; }
+
+    #cta p {
+      font-size: 1rem;
+      color: rgba(245,240,235,0.55);
+      max-width: 500px;
+      margin: 0 auto 48px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 40px 60px;
+      border-top: 1px solid rgba(245,240,235,0.07);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      color: var(--gray-text);
+    }
+
+    footer a {
+      color: var(--maroon-light);
+      text-decoration: none;
+      font-size: 0.78rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav, #hero, #problem, #about, #services, #pricing, #testimonials, #portfolio, #cta, footer {
+        padding-left: 28px;
+        padding-right: 28px;
+      }
+
+      .divider { margin: 0 28px; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-wrap: wrap; gap: 28px; }
+      .portfolio-inner { flex-direction: column; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-up {
+      animation: fadeUp 0.7s ease forwards;
+    }
+
+    .fade-up-1 { animation-delay: 0.1s; opacity: 0; }
+    .fade-up-2 { animation-delay: 0.25s; opacity: 0; }
+    .fade-up-3 { animation-delay: 0.4s; opacity: 0; }
+    .fade-up-4 { animation-delay: 0.55s; opacity: 0; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a class="nav-logo" href="#">Kidung Alexander<span>.</span></a>
+  <a class="nav-cta" href="https://wa.link/nwg79l" target="_blank">Konsultasi Gratis</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <p class="hero-tag fade-up fade-up-1">Jasa Penulisan Artikel Profesional</p>
+  <h1 class="fade-up fade-up-2">
+    Bisnis Kamu Butuh Konten<br>
+    Tapi Kamu <em>Tidak Punya Waktu</em><br>
+    Untuk Mengurusnya
+  </h1>
+  <p class="hero-sub fade-up fade-up-3">
+    Kidung Alexander hadir untuk kamu, pemilik bisnis, korporasi, sekolah, dan organisasi yang serius — tapi tidak memiliki tenaga dan tim untuk mengurus artikel, press release, dan publikasi bisnis kamu
+  </p>
+  <a href="https://wa.link/nwg79l" target="_blank" class="btn-primary fade-up fade-up-4">
+    Mulai Konsultasi Gratis
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </a>
+  <div class="hero-stats fade-up fade-up-4">
+    <div class="stat-item">
+      <div class="stat-num">3+</div>
+      <div class="stat-label">Tahun Pengalaman</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">50+</div>
+      <div class="stat-label">Artikel Dipublikasikan</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Topik Spesialisasi</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PROBLEM ── -->
+<section id="problem">
+  <p class="section-tag">Kenali Masalahnya</p>
+  <h2>Konten Bisnis Kamu Sudah Ada. Tapi <em>Tidak Ada Yang Membacanya</em> Dengan Serius</h2>
+  <p class="problem-body">
+    Bukan karena bisnismu tidak menarik. Tapi karena konten yang setengah hati tidak pernah bisa membangun kepercayaan
+    <strong>Dan tanpa kepercayaan, tidak ada konversi</strong>
+  </p>
+  <div class="problem-list">
+    <div class="problem-item">
+      <span class="problem-icon">✦</span>
+      <p>Kamu sudah sibuk menjalankan bisnis — tidak ada waktu untuk riset, menulis, dan edit artikel yang layak dibaca</p>
+    </div>
+    <div class="problem-item">
+      <span class="problem-icon">✦</span>
+      <p>Tim internal tidak punya spesialisasi di bidang penulisan ekonomi, bisnis, atau pasar modal yang dibutuhkan</p>
+    </div>
+    <div class="problem-item">
+      <span class="problem-icon">✦</span>
+      <p>Press release dan artikel kerjasama bisnis kamu ditulis asal-asalan — hasilnya tidak terkesan profesional di mata publik maupun mitra</p>
+    </div>
+    <div class="problem-item">
+      <span class="problem-icon">✦</span>
+      <p>Kamu tahu konten itu penting, tapi tidak tahu harus mulai dari mana — dan tidak mau buang waktu coba-coba</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="about-label">KA.</div>
+      <h2 class="about-title">Penulis Artikel Untuk Mereka Yang Ingin <em>Serius</em></h2>
+      <p class="about-body">
+        Saya Kidung Alexander — penulis artikel dengan latar belakang di dunia <strong>public relations</strong>, tempat saya belajar bahwa satu kata yang tepat bisa mengubah persepsi publik sepenuhnya
+      </p>
+      <p class="about-body">
+        Saya juga pendiri <strong>Jayneharaa</strong>, platform digital publishing yang membuktikan bahwa konten berkualitas bukan kebetulan — melainkan hasil dari proses yang sistematis dan niat yang serius
+      </p>
+      <p class="about-body">
+        Saya dipercaya untuk menulis artikel edukasi, editorial, dan <em>explainer</em> untuk berbagai media. Bukan hanya menulis — tapi memastikan setiap kata bekerja keras untuk audiens yang membacanya
+      </p>
+      <div class="about-tags">
+        <span class="tag">Ekonomi</span>
+        <span class="tag">Bisnis</span>
+        <span class="tag">Pasar Modal</span>
+        <span class="tag">Tren Masa Depan</span>
+        <span class="tag">Self-Development</span>
+      </div>
+    </div>
+    <div class="about-credentials">
+      <div class="credential-card">
+        <h4>Public Relations</h4>
+        <p>Pengalaman di bidang PR membangun pemahaman mendalam tentang bagaimana membangun narasi yang tepat sasaran untuk publik dan media</p>
+      </div>
+      <div class="credential-card">
+        <h4>Pendiri Jayneharaa</h4>
+        <p>Digital product publishing yang membuktikan bahwa konten bisa menjadi aset nyata — bukan sekadar pengisi jadwal publikasi</p>
+      </div>
+      <div class="credential-card">
+        <h4>Penulis Multi-Media</h4>
+        <p>Dipercaya mengisi artikel edukasi, editorial, dan explainer untuk berbagai platform dan media di Indonesia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="services-header">
+    <p class="section-tag">Yang Saya Kerjakan</p>
+    <h2>Solusi Konten Untuk Bisnis Yang <em>Tidak Punya Waktu</em> Untuk Kompromi</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <h3>Artikel Bisnis & Korporasi</h3>
+      <p>Konten analitik, opini, dan informatif untuk perusahaan yang ingin tampil kredibel dan berpengaruh di industrinya</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <h3>Press Release & Publikasi</h3>
+      <p>Rilis resmi kerjasama, pencapaian, dan pengumuman bisnis yang ditulis dengan presisi — siap naik ke media</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <h3>Artikel Edukasi & Sekolah</h3>
+      <p>Konten berkualitas untuk institusi pendidikan yang ingin membangun otoritas dan relevansi di ruang digital</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <h3>Ekonomi & Pasar Modal</h3>
+      <p>Explainer dan analisis pasar yang membuat topik kompleks terasa mudah dipahami — tanpa kehilangan kedalaman</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <h3>Tren & Masa Depan</h3>
+      <p>Artikel forward-looking yang memposisikan bisnis kamu sebagai pemimpin pemikiran di industri yang terus berubah</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <h3>Self-Development & Organisasi</h3>
+      <p>Konten berbasis riset untuk komunitas, organisasi, dan perusahaan yang peduli pada pertumbuhan manusianya</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PRICING ── -->
+<section id="pricing">
+  <div class="pricing-header">
+    <p class="section-tag">Investasi</p>
+    <h2>Pilih Paket Yang <em>Sesuai</em> Dengan Kebutuhan Bisnismu</h2>
+    <p style="font-size:0.9rem; color:var(--gray-text); margin-top:12px;">Semua paket termasuk konsultasi awal, riset topik, dan revisi terbatas. Kontrak jelas, tanpa biaya tersembunyi</p>
+  </div>
+  <div class="pricing-grid">
+
+    <div class="pricing-card">
+      <p class="pricing-tier">Paket Rintis</p>
+      <div class="pricing-price">Rp102.000</div>
+      <p class="pricing-sub">2× artikel per bulan<br>Kontrak 3 bulan</p>
+      <ul class="pricing-features">
+        <li>2 Artikel Per Bulan (Total 6 Artikel)</li>
+        <li>Riset Topik & Outline</li>
+        <li>1 Kali Revisi Per Artikel</li>
+        <li>Format Siap Publish</li>
+        <li>Konsultasi Awal Via WhatsApp</li>
+      </ul>
+      <a href="https://wa.link/nwg79l" target="_blank" class="btn-outline">Pilih Paket Ini</a>
+    </div>
+
+    <div class="pricing-card featured">
+      <p class="pricing-tier">Paket Tumbuh</p>
+      <div class="pricing-price">Rp422.000</div>
+      <p class="pricing-sub">4× artikel per bulan<br>Kontrak 3 bulan</p>
+      <ul class="pricing-features">
+        <li>4 Artikel Per Bulan (Total 12 Artikel)</li>
+        <li>Riset Topik & Outline Mendalam</li>
+        <li>2 Kali Revisi Per Artikel</li>
+        <li>Optimasi SEO Dasar</li>
+        <li>Format Siap Publish & Distribusi</li>
+        <li>Prioritas Respons Konsultasi</li>
+      </ul>
+      <a href="https://wa.link/nwg79l" target="_blank" class="btn-outline">Pilih Paket Ini</a>
+    </div>
+
+    <div class="pricing-card">
+      <p class="pricing-tier">Paket Serius</p>
+      <div class="pricing-price">Rp472.000</div>
+      <p class="pricing-sub">8× artikel per bulan<br>Kontrak 1 tahun</p>
+      <ul class="pricing-features">
+        <li>8 Artikel Per Bulan (Total 96 Artikel)</li>
+        <li>Riset Mendalam + Angle Strategy</li>
+        <li>Revisi Unlimited Per Siklus</li>
+        <li>SEO + Struktur Konten Penuh</li>
+        <li>Laporan Progres Bulanan</li>
+        <li>Kontak Langsung Prioritas</li>
+      </ul>
+      <a href="https://wa.link/nwg79l" target="_blank" class="btn-outline">Pilih Paket Ini</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="testi-header">
+    <p class="section-tag">Kata Mereka</p>
+    <h2>Bukan Klaim. Ini Pengalaman <em>Nyata</em> Dari Klien Yang Sudah Kerja Bareng</h2>
+  </div>
+  <div class="testi-grid">
+
+    <div class="testi-card">
+      <p class="testi-quote">Jujur awalnya saya skeptis, tapi setelah artikel pertama selesai saya langsung tahu ini beda. Tulisannya rapi, punya alur, dan yang paling penting — orang yang baca jadi nanya lebih lanjut soal bisnis saya</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;background:transparent;"><svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"> <!-- Hendro: strong angular jaw, broad forehead, masculine --> <defs>  <linearGradient id="bgH" x1="0" y1="0" x2="1" y2="1">   <stop offset="0%" stop-color="#7a1e1e"/>   <stop offset="100%" stop-color="#3a0a0a"/>  </linearGradient> </defs> <circle cx="40" cy="40" r="40" fill="url(#bgH)"/> <!-- neck --> <polygon points="33,68 47,68 45,80 35,80" fill="#c8886a"/> <!-- head base --> <polygon points="20,52 40,18 60,52 55,66 25,66" fill="#d4947a"/> <!-- forehead shadow --> <polygon points="25,38 40,18 55,38 40,32" fill="#be7d65"/> <!-- left cheek --> <polygon points="20,52 25,66 35,58 28,44" fill="#c8836a"/> <!-- right cheek --> <polygon points="60,52 55,66 45,58 52,44" fill="#be7d65"/> <!-- jaw highlight --> <polygon points="30,62 40,66 50,62 40,70" fill="#e8a88a"/> <!-- brow left --> <polygon points="25,34 33,30 35,36 27,38" fill="#3a1a10"/> <!-- brow right --> <polygon points="55,34 47,30 45,36 53,38" fill="#3a1a10"/> <!-- left eye socket --> <polygon points="26,38 34,34 36,42 28,44" fill="#2a0a08"/> <!-- right eye socket --> <polygon points="54,38 46,34 44,42 52,44" fill="#2a0a08"/> <!-- left eye --> <ellipse cx="31" cy="39" rx="4" ry="3" fill="#1a0505"/> <ellipse cx="30.5" cy="38.5" rx="1.2" ry="1" fill="#ffffff" opacity="0.6"/> <!-- right eye --> <ellipse cx="49" cy="39" rx="4" ry="3" fill="#1a0505"/> <ellipse cx="48.5" cy="38.5" rx="1.2" ry="1" fill="#ffffff" opacity="0.6"/> <!-- nose bridge --> <polygon points="38,42 40,36 42,42 40,50" fill="#b86e58"/> <!-- nose --> <polygon points="36,50 44,50 42,54 38,54" fill="#a05a48"/> <!-- mouth --> <polygon points="33,56 40,53 47,56 43,60 37,60" fill="#8b2222"/> <!-- upper lip line --> <line x1="33" y1="56" x2="47" y2="56" stroke="#6b1a1a" stroke-width="1"/> <!-- hair top --> <polygon points="20,38 25,22 40,16 55,22 60,38 55,28 40,20 25,28" fill="#1a0a08"/> <!-- hair side left --> <polygon points="20,38 20,52 25,44 25,28" fill="#1a0a08"/> <!-- hair side right --> <polygon points="60,38 60,52 55,44 55,28" fill="#1a0a08"/></svg></div>
+        <div>
+          <div class="testi-name">Hendro S.</div>
+          <div class="testi-role">Pemilik Usaha Distribusi, Surabaya</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-quote">Saya udah lama cari penulis yang ngerti konteks bisnis, bukan cuma bisa nulis indah. Kidung paham banget angle yang tepat buat audiens kami. Press release terakhir kami langsung dipublikasi tanpa banyak edit</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;background:transparent;"><svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"> <!-- Sarah: softer angles, oval face, feminine --> <defs>  <linearGradient id="bgS" x1="0" y1="1" x2="1" y2="0">   <stop offset="0%" stop-color="#6b1a1a"/>   <stop offset="100%" stop-color="#4a0e0e"/>  </linearGradient> </defs> <circle cx="40" cy="40" r="40" fill="url(#bgS)"/> <!-- long hair back --> <polygon points="16,30 22,70 30,80 50,80 58,70 64,30 55,20 40,15 25,20" fill="#1a0808"/> <!-- neck --> <polygon points="34,66 46,66 44,78 36,78" fill="#e8a888"/> <!-- face --> <polygon points="22,44 28,26 40,18 52,26 58,44 52,62 40,68 28,62" fill="#e0a080"/> <!-- forehead --> <polygon points="28,26 40,18 52,26 40,30" fill="#d49070"/> <!-- left cheek highlight --> <polygon points="22,44 30,36 30,56 24,52" fill="#ebb898"/> <!-- right cheek highlight --> <polygon points="58,44 50,36 50,56 56,52" fill="#daa070"/> <!-- brow left - arched --> <polygon points="27,32 35,28 37,33 29,35" fill="#2a0a08"/> <!-- brow right - arched --> <polygon points="53,32 45,28 43,33 51,35" fill="#2a0a08"/> <!-- left eye --> <ellipse cx="32" cy="37" rx="5" ry="3.5" fill="#1a0505"/> <ellipse cx="31.5" cy="36" rx="1.5" ry="1.2" fill="#ffffff" opacity="0.65"/> <!-- lash left --> <line x1="27" y1="35" x2="29" y2="33.5" stroke="#1a0505" stroke-width="1"/> <line x1="37" y1="35" x2="39" y2="33.5" stroke="#1a0505" stroke-width="1"/> <!-- right eye --> <ellipse cx="48" cy="37" rx="5" ry="3.5" fill="#1a0505"/> <ellipse cx="47.5" cy="36" rx="1.5" ry="1.2" fill="#ffffff" opacity="0.65"/> <!-- lash right --> <line x1="43" y1="35" x2="41" y2="33.5" stroke="#1a0505" stroke-width="1"/> <line x1="53" y1="35" x2="55" y2="33.5" stroke="#1a0505" stroke-width="1"/> <!-- nose --> <polygon points="38,41 40,35 42,41 40,47" fill="#c87858"/> <polygon points="36,47 44,47 42,51 38,51" fill="#b86848"/> <!-- lips --> <polygon points="33,54 40,50 47,54 44,59 36,59" fill="#9b3a3a"/> <polygon points="33,54 40,52 47,54" fill="#7a2020"/> <!-- cupid bow --> <polygon points="37,50 40,48 43,50 40,52" fill="#8b2a2a"/> <!-- hair front wisps --> <polygon points="22,28 28,20 35,22 30,30" fill="#1a0808"/> <polygon points="58,28 52,20 45,22 50,30" fill="#1a0808"/> <polygon points="22,30 16,40 20,44 26,36" fill="#1a0808"/> <polygon points="58,30 64,40 60,44 54,36" fill="#1a0808"/></svg></div>
+        <div>
+          <div class="testi-name">Sarah A.</div>
+          <div class="testi-role">Marketing Manager, Startup Fintech</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-quote">Kami butuh konten edukasi rutin tapi tim kami tidak punya kapasitas untuk itu. Dari bulan pertama bekerja sama, hasilnya konsisten dan selalu on-point. Benar-benar menghemat banyak waktu kami</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;background:transparent;"><svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"> <!-- Arman: square face, defined structure, authoritative --> <defs>  <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">   <stop offset="0%" stop-color="#8b2222"/>   <stop offset="100%" stop-color="#3a0808"/>  </linearGradient> </defs> <circle cx="40" cy="40" r="40" fill="url(#bgA)"/> <!-- neck --> <polygon points="32,67 48,67 47,80 33,80" fill="#b8785a"/> <!-- face - square jaw --> <polygon points="18,50 22,26 40,18 58,26 62,50 56,66 24,66" fill="#c8845e"/> <!-- forehead plane --> <polygon points="22,26 40,18 58,26 48,34 32,34" fill="#b87050"/> <!-- jaw planes --> <polygon points="18,50 24,66 32,60 26,46" fill="#be7a5a"/> <polygon points="62,50 56,66 48,60 54,46" fill="#ae6e4e"/> <!-- mustache area --> <polygon points="32,52 48,52 46,58 34,58" fill="#a86040"/> <!-- brow left - thick straight --> <polygon points="22,30 33,27 34,33 23,34" fill="#1a0808"/> <!-- brow right - thick straight --> <polygon points="58,30 47,27 46,33 57,34" fill="#1a0808"/> <!-- left eye --> <polygon points="23,34 33,31 35,40 25,41" fill="#150404"/> <ellipse cx="29" cy="37" rx="4.5" ry="3" fill="#0d0202"/> <ellipse cx="28" cy="36" rx="1.3" ry="1" fill="#ffffff" opacity="0.55"/> <!-- right eye --> <polygon points="57,34 47,31 45,40 55,41" fill="#150404"/> <ellipse cx="51" cy="37" rx="4.5" ry="3" fill="#0d0202"/> <ellipse cx="50" cy="36" rx="1.3" ry="1" fill="#ffffff" opacity="0.55"/> <!-- nose - strong bridge --> <polygon points="37,40 40,32 43,40 41,50 39,50" fill="#a86040"/> <polygon points="36,50 44,50 43,55 37,55" fill="#986030"/> <!-- mustache --> <polygon points="33,56 40,53 47,56 44,58 36,58" fill="#1a0808"/> <!-- mouth --> <polygon points="34,60 40,57 46,60 43,64 37,64" fill="#8b2222"/> <!-- hair - short cropped --> <polygon points="18,42 20,26 28,18 40,14 52,18 60,26 62,42 58,30 52,22 40,18 28,22 22,30" fill="#0f0505"/> <!-- side burns --> <polygon points="18,42 20,54 24,50 22,38" fill="#0f0505"/> <polygon points="62,42 60,54 56,50 58,38" fill="#0f0505"/></svg></div>
+        <div>
+          <div class="testi-name">Arman P.</div>
+          <div class="testi-role">Direktur Operasional, Lembaga Pendidikan</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-quote">Yang bikin saya betah kerja sama adalah Kidung nggak pernah asal deliver. Kalau ada yang kurang pas dia bilang dari awal, bukan tunggu kita komplain. Profesional banget</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;background:transparent;"><svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"> <!-- Vera: sharp cheekbones, elegant, professional --> <defs>  <linearGradient id="bgV" x1="1" y1="0" x2="0" y2="1">   <stop offset="0%" stop-color="#5a1515"/>   <stop offset="100%" stop-color="#2a0808"/>  </linearGradient> </defs> <circle cx="40" cy="40" r="40" fill="url(#bgV)"/> <!-- hair bun / updo --> <ellipse cx="40" cy="14" rx="16" ry="10" fill="#0f0404"/> <polygon points="24,18 20,30 26,24" fill="#0f0404"/> <polygon points="56,18 60,30 54,24" fill="#0f0404"/> <!-- neck --> <polygon points="35,66 45,66 44,80 36,80" fill="#e0a888"/> <!-- face - sharp diamond --> <polygon points="24,44 32,24 40,16 48,24 56,44 48,62 40,68 32,62" fill="#e8b090"/> <!-- cheekbone highlights - sharp --> <polygon points="24,44 32,54 30,44 26,40" fill="#f0c0a0"/> <polygon points="56,44 48,54 50,44 54,40" fill="#d8a880"/> <!-- forehead --> <polygon points="32,24 40,16 48,24 40,30" fill="#d8a070"/> <!-- brow left - thin arched --> <polygon points="26,33 35,28 36,31 27,35" fill="#1a0808"/> <!-- brow right - thin arched --> <polygon points="54,33 45,28 44,31 53,35" fill="#1a0808"/> <!-- left eye - almond --> <polygon points="25,37 34,33 37,40 28,42" fill="#100303"/> <ellipse cx="31" cy="38" rx="4.5" ry="2.8" fill="#080202"/> <ellipse cx="30.5" cy="37" rx="1.4" ry="1.1" fill="#ffffff" opacity="0.7"/> <!-- left lashes --> <line x1="25" y1="37" x2="23" y2="35" stroke="#0f0404" stroke-width="1.2"/> <line x1="37" y1="38" x2="39" y2="36" stroke="#0f0404" stroke-width="1.2"/> <!-- right eye - almond --> <polygon points="55,37 46,33 43,40 52,42" fill="#100303"/> <ellipse cx="49" cy="38" rx="4.5" ry="2.8" fill="#080202"/> <ellipse cx="48.5" cy="37" rx="1.4" ry="1.1" fill="#ffffff" opacity="0.7"/> <!-- right lashes --> <line x1="55" y1="37" x2="57" y2="35" stroke="#0f0404" stroke-width="1.2"/> <line x1="43" y1="38" x2="41" y2="36" stroke="#0f0404" stroke-width="1.2"/> <!-- nose - fine straight --> <polygon points="38,42 40,34 42,42 41,50 39,50" fill="#c8886a"/> <polygon points="37,50 43,50 42,54 38,54" fill="#b87858"/> <!-- lips - defined --> <polygon points="33,56 40,51 47,56 44,61 36,61" fill="#9b3535"/> <polygon points="33,56 37,53 40,51 43,53 47,56 40,54" fill="#7a2020"/> <!-- cupid's bow --> <polygon points="37,51 40,49 43,51 40,53" fill="#8b2a2a"/> <!-- earrings hint --> <circle cx="22" cy="48" r="2.5" fill="#8b2222" opacity="0.8"/> <circle cx="22" cy="48" r="1" fill="#f0d0a0" opacity="0.9"/> <circle cx="58" cy="48" r="2.5" fill="#8b2222" opacity="0.8"/> <circle cx="58" cy="48" r="1" fill="#f0d0a0" opacity="0.9"/></svg></div>
+        <div>
+          <div class="testi-name">Vera L.</div>
+          <div class="testi-role">CEO, Konsultan Bisnis UMKM</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-quote">Artikel soal pasar modal yang ditulis untuk newsletter kami responsnya luar biasa. Subscriber kami bilang tulisannya enak dibaca tapi tetap berasa berbobot. Itu yang susah dicari dari penulis lain</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;background:transparent;"><svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"> <!-- Kevin: youthful, narrower face, energetic --> <defs>  <linearGradient id="bgK" x1="0" y1="0" x2="1" y2="1">   <stop offset="0%" stop-color="#6b1a1a"/>   <stop offset="100%" stop-color="#2a0606"/>  </linearGradient> </defs> <circle cx="40" cy="40" r="40" fill="url(#bgK)"/> <!-- neck --> <polygon points="34,67 46,67 45,80 35,80" fill="#c8906a"/> <!-- hair top - textured short --> <polygon points="20,36 25,18 40,12 55,18 60,36 56,24 48,16 40,14 32,16 24,24" fill="#0a0303"/> <polygon points="20,36 18,46 22,42 22,32" fill="#0a0303"/> <polygon points="60,36 62,46 58,42 58,32" fill="#0a0303"/> <!-- hair texture strands --> <line x1="32" y1="14" x2="30" y2="20" stroke="#1a0606" stroke-width="1.5"/> <line x1="40" y1="12" x2="40" y2="18" stroke="#1a0606" stroke-width="1.5"/> <line x1="48" y1="14" x2="50" y2="20" stroke="#1a0606" stroke-width="1.5"/> <!-- face - oval youthful --> <polygon points="20,46 26,26 40,18 54,26 60,46 52,64 40,70 28,64" fill="#d89870"/> <!-- forehead --> <polygon points="26,26 40,18 54,26 40,32" fill="#c88860"/> <!-- cheek left soft --> <ellipse cx="24" cy="48" rx="6" ry="8" fill="#e0a878" opacity="0.5"/> <!-- cheek right soft --> <ellipse cx="56" cy="48" rx="6" ry="8" fill="#c88860" opacity="0.5"/> <!-- brow left - natural --> <polygon points="24,32 33,28 35,34 26,36" fill="#1a0606"/> <!-- brow right - natural --> <polygon points="56,32 47,28 45,34 54,36" fill="#1a0606"/> <!-- left eye - round --> <ellipse cx="30" cy="39" rx="5.5" ry="4" fill="#100202"/> <ellipse cx="29.5" cy="38" rx="1.6" ry="1.3" fill="#ffffff" opacity="0.7"/> <!-- right eye - round --> <ellipse cx="50" cy="39" rx="5.5" ry="4" fill="#100202"/> <ellipse cx="49.5" cy="38" rx="1.6" ry="1.3" fill="#ffffff" opacity="0.7"/> <!-- nose - button --> <polygon points="38,43 40,36 42,43 41,49 39,49" fill="#b87850"/> <ellipse cx="37" cy="49" rx="3" ry="2" fill="#a86840"/> <ellipse cx="43" cy="49" rx="3" ry="2" fill="#a86840"/> <polygon points="37,49 43,49 43,52 37,52" fill="#986030"/> <!-- smile lines - youthful expression --> <path d="M22,52 Q20,56 22,58" stroke="#b87050" stroke-width="1" fill="none" opacity="0.6"/> <path d="M58,52 Q60,56 58,58" stroke="#b87050" stroke-width="1" fill="none" opacity="0.6"/> <!-- mouth - slight smile --> <polygon points="33,57 40,53 47,57 44,62 36,62" fill="#8b2222"/> <polygon points="33,57 40,55 47,57" fill="#6b1515"/> <!-- smile curve --> <path d="M33,57 Q40,63 47,57" stroke="#7a1a1a" stroke-width="0.8" fill="none"/></svg></div>
+        <div>
+          <div class="testi-name">Kevin R.</div>
+          <div class="testi-role">Founder, Komunitas Investor Pemula</div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PORTFOLIO ── -->
+<section id="portfolio">
+  <div class="portfolio-inner">
+    <div class="portfolio-text">
+      <p class="section-tag">Karya Nyata</p>
+      <h2>Lihat Sendiri <em>Seperti Apa</em> Tulisan Yang Bisa Bekerja Untuk Bisnismu</h2>
+      <p>Semua artikel yang pernah saya tulis tersedia di Jayneharaa — platform publishing saya. Dari ekonomi, bisnis, hingga self-development. Baca, nilai sendiri, lalu putuskan</p>
+      <a href="https://jayneharaa.blogspot.com" target="_blank" class="btn-primary">
+        Kunjungi Portofolio
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+    <div style="border: 1px solid rgba(245,240,235,0.08); padding: 40px 48px; text-align:center; min-width:260px;">
+      <div style="font-family:'Playfair Display',serif; font-size:3.5rem; font-weight:900; color:var(--maroon-light); margin-bottom:8px;">JH.</div>
+      <p style="font-size:0.8rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gray-text);">Jayneharaa</p>
+      <p style="font-size:0.82rem; color:rgba(245,240,235,0.45); margin-top:12px;">Digital Publishing Platform</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── CTA FINAL ── -->
+<section id="cta">
+  <p class="section-tag" style="text-align:center; margin-bottom:20px;">Ambil Langkah Pertama</p>
+  <h2>Bisnis Kamu Layak Punya Konten Yang <em>Bekerja Serius</em></h2>
+  <p>Konsultasi pertama gratis. Tidak ada komitmen, tidak ada tekanan. Hanya percakapan jujur tentang apa yang bisnis kamu butuhkan — dan apakah kita cocok untuk bekerja sama</p>
+  <a href="https://wa.link/nwg79l" target="_blank" class="btn-primary" style="margin: 0 auto;">
+    Hubungi via WhatsApp
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </a>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2025 Kidung Alexander. Semua hak dilindungi.</p>
+  <p>Bagian dari <a href="https://jayneharaa.blogspot.com" target="_blank">Jayneharaa</a> | Digital Product Publishing</p>
+</footer>
+
+</body>
+</html>
